@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'roboto-medium';
+    src: url(../fonts/Roboto-medium.ttf);
+}
+
+@font-face {
+    font-family: 'ubuntu-bold-italic';
+    src: url(../fonts/ubuntu.bold-italic.ttf);
+}
+
+@font-face {
+    font-family: 'ubuntu-regular';
+    src: url(../fonts/ubuntu.regular.ttf);
+}
+
+.em,.em-svg{height:1.5em;width:1.5em;background-position:center;background-repeat:no-repeat;background-size:contain;display:inline-block;vertical-align:middle}.em---1,.em---1,.em-hammer_and_pick{background-image:url("../img/2692.png")}.em-hammer_and_pick.em-svg{background:url("../img/2692.png");background-image:url("../img/svg/2692.svg"),none}.em-pick{background-image:url("../img/26cf.png")}.em-pick.em-svg{background:url("../img/26cf.png");background-image:url("../img/svg/26cf.svg"),none}

@@ -1,0 +1,395 @@
+#homepage {
+    top: 60px;
+    position: relative;
+    left: 0px;
+}
+
+.img-container {
+    text-align: center;
+    top: 45px;
+    position: relative;
+}
+
+.square_reward {
+    height: 160px;
+    width: 160px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, rgb(230, 230, 219) 50%, rgb(54, 54, 54) 50%);
+    -webkit-transition: background-position 0.15s;
+    -moz-transition: background-position 0.15s;
+    transition: background-position 0.15s;
+        
+    border: 1px solid #b4b4b4;
+   
+}
+
+.circle_reward {
+    height: 125px;
+    width: 125px;
+    border: 4px solid #e92424;
+    border-radius: 50%;
+    position: relative;
+    top: 26px;
+    left: 10%;
+    text-align: center;
+}
+
+#GDOGE_txt
+{
+    position: relative;
+    top:-15px;
+    font-size: 16pt;
+    font-weight: normal;
+    font-family: ubuntu-regular;
+}
+
+#block_reward_txt
+{
+    position: relative;
+    top:-40px;
+    font-size: 13pt;
+    font-weight: normal;
+    font-family: ubuntu-regular;
+}
+
+#block_reward {
+    position: relative;
+    top: -2px;
+    font-size: 19pt;
+    font-weight: bold;
+    font-family: ubuntu-regular;
+}
+
+#block_reward_box {
+    position: relative;
+    top: 50px;
+    float: left;
+}
+
+.square_reward:hover {
+    background-position: 0 -100%; 
+}
+
+.square_reward:hover #block_reward_txt {color: #fdfdfd;}
+.square_reward:hover #block_reward {color: #fdfdfd;}
+.square_reward:hover #GDOGE_txt {color: #fdfdfd;}
+
+#why_gdoge_id {
+    position: relative;
+    top: 0px;
+}
+
+.square_hashrate {
+    height: 160px;
+    width: 160px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, rgb(230, 230, 219) 50%, rgb(54, 54, 54) 50%);
+    -webkit-transition: background-position 0.15s;
+    -moz-transition: background-position 0.15s;
+    transition: background-position 0.15s;   
+    border: 1px solid #b4b4b4;
+   
+}
+
+.circle_hashrate {
+    height: 125px;
+    width: 125px;
+    border: 4px solid #e92424;
+    border-radius: 50%;
+    position: relative;
+    top: 26px;
+    left: 10%;
+    text-align: center;
+}
+
+#hashrate_txt
+{
+    position: relative;
+    top:-40px;
+    font-size: 13pt;
+    font-weight: normal;
+    font-family: ubuntu-regular;
+}
+
+#hashrate {
+    position: relative;
+    top: -2px;
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: ubuntu-regular;
+}
+
+#hashrate_box {
+    position: relative;
+    top: 50px;
+    left: 2%;
+    float: left;
+}
+
+#hash_unit_txt
+{
+    position: relative;
+    top:-15px;
+    font-size: 16pt;
+    font-weight: normal;
+    font-family: ubuntu-regular;
+}
+
+.square_hashrate:hover {
+    background-position: 0 -100%; 
+}
+
+.square_hashrate:hover #hashrate_txt {color: #fdfdfd;}
+.square_hashrate:hover #hashrate {color: #fdfdfd;}
+.square_hashrate:hover #hash_unit_txt {color: #fdfdfd;}
+
+.square_discord {
+    height: 160px;
+    width: 160px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, rgb(230, 230, 219) 50%, rgb(54, 54, 54) 50%);
+    -webkit-transition: background-position 0.15s;
+    -moz-transition: background-position 0.15s;
+    transition: background-position 0.15s;   
+    border: 1px solid #b4b4b4;
+   
+}
+
+.square_discord:hover {
+    background-position: 0 -100%; 
+}
+
+.square_discord:hover #Discord_txt {color: #fdfdfd;}
+
+#discord_box {
+    position: relative;
+    top: 50px;
+    float: right;
+}
+
+#Discord_txt
+{
+    position: relative;
+    top:-10px;
+    text-align: center;
+    font-size: 13pt;
+    font-weight: normal;
+    font-family: ubuntu-regular;
+}
+
+#discord_img
+{
+    position: relative;
+    top:-44px;
+}
+
+.square_telegram {
+    height: 160px;
+    width: 160px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, rgb(230, 230, 219) 50%, rgb(54, 54, 54) 50%);
+    -webkit-transition: background-position 0.15s;
+    -moz-transition: background-position 0.15s;
+    transition: background-position 0.15s;   
+    border: 1px solid #b4b4b4;
+   
+}
+
+.square_telegram:hover {
+    background-position: 0 -100%; 
+}
+
+.square_telegram:hover #telegram_txt {color: #fdfdfd;}
+
+#telegram_box {
+    position: relative;
+    top: 50px;
+    right: 2%;
+    float: right;
+}
+
+#telegram_txt
+{
+    position: relative;
+    top:-10px;
+    text-align: center;
+    font-size: 13pt;
+    font-weight: normal;
+    font-family: ubuntu-regular;
+}
+
+#telegram_img
+{
+    position: relative;
+    top:-27px;
+    left: 15px;
+}
+
+#downloads
+{
+    position: relative;
+    top: 220px;
+}
+
+.square_linux {
+    height: 202px;
+    width: 202px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, rgb(230, 230, 219) 50%, rgb(54, 54, 54) 50%);
+    -webkit-transition: background-position 0.15s;
+    -moz-transition: background-position 0.15s;
+    transition: background-position 0.15s;   
+    border: 1px solid #b4b4b4;
+   
+}
+
+.square_linux:hover {
+    background-position: 0 -100%; 
+}
+
+.square_linux:hover #linux_txt {color: #fdfdfd;}
+
+#download_linux_box {
+    position: relative;
+    top: 50px;
+    right: -8%;
+    float: left;
+}
+
+#linux_txt
+{
+    position: relative;
+    top:-10px;
+    text-align: center;
+    font-size: 13pt;
+    font-weight: normal;
+    font-family: ubuntu-regular;
+}
+
+#linux_img
+{
+    position: relative;
+    top:-27px;
+    left: 15px;
+}
+
+.square_windows {
+    height: 202px;
+    width: 202px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, rgb(230, 230, 219) 50%, rgb(54, 54, 54) 50%);
+    -webkit-transition: background-position 0.15s;
+    -moz-transition: background-position 0.15s;
+    transition: background-position 0.15s;   
+    border: 1px solid #b4b4b4;
+   
+}
+
+.square_windows:hover {
+    background-position: 0 -100%; 
+}
+
+.square_windows:hover #windows_txt {color: #fdfdfd;}
+
+#download_windows_box {
+    position: relative;
+    top: 50px;
+    left: 10%;
+    float: left;
+}
+
+
+@media screen and (max-width: 1089px) {
+    #download_windows_box {top:-35px;}
+  }
+
+  @media screen and (min-width: 1088px) {
+    #download_windows_box {top: 50px;}
+  }
+
+  @media screen and (max-width: 950px) {
+    #download_windows_box {top:50px;}
+  }
+
+  @media screen and (max-width: 602px) {
+    #download_windows_box {top:-35px;}
+  }
+
+  @media screen and (max-width: 518px) {
+    #download_windows_box {top: 50px;}
+  }
+
+#windows_txt
+{
+    position: relative;
+    top:-10px;
+    text-align: center;
+    font-size: 13pt;
+    font-weight: normal;
+    font-family: ubuntu-regular;
+}
+
+#windows_img
+{
+    position: relative;
+    top:-33px;
+    left: 10px;
+}
+
+.square_github {
+    height: 202px;
+    width: 80%;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, rgb(230, 230, 219) 50%, rgb(54, 54, 54) 50%);
+    -webkit-transition: background-position 0.15s;
+    -moz-transition: background-position 0.15s;
+    transition: background-position 0.15s;   
+    border: 1px solid #b4b4b4;
+   
+}
+
+.square_github:hover {
+    background-position: 0 100%; 
+}
+
+.square_github:hover #github_txt {color: #fdfdfd;}
+
+#github_box {
+    position: relative;
+    top: 500px;
+    left: 10%;
+}
+
+#github_txt
+{
+    position:  relative;
+    top:-78px;
+    float: right;
+    text-align: center;
+    font-size:7vw;
+    font-weight: normal;
+    font-family: ubuntu-regular;
+}
+
+@media screen and (min-width: 1910px) {
+    #github_txt {font-size: 106px}
+    .square_github{
+        width: 1528px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    #github_txt {top:9vw; font-size: 5vw;}
+  }
+
+#github_img
+{
+    position: absolute;
+    top:11px;
+    left: 10px;
+}
+
+#mail{
+    position: relative;
+    top: 500px;
+}

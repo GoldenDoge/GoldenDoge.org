@@ -1,0 +1,34 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.dogo_fpga_left {
+   display: inline;
+   margin-left: 0;
+   margin-right: auto;
+   width: 20%;
+}
+
+#dogo_fpga_left2{
+    position: relative;
+    top : -28vw;
+}
+
+#pros_cons_mine1{
+    position: relative;
+    left : 18vw;
+    top: -23vw;
+}
+
+#pools{
+    position: relative;
+    top: -21vw;
+}
+
+#mergedmining{
+    position: relative;
+    top: -19vw;
+}

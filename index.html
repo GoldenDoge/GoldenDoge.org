@@ -1,0 +1,259 @@
+<html>
+
+<head>
+<title>GoldenDoge</title>
+<link rel="icon" href="img/logo.png">
+<link rel="stylesheet" type="text/css" href="css/upper_menu.css">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="fonts/font_awesome/css/all.css" rel="stylesheet">
+
+
+</head>
+<style>
+#top-bar {
+  background-color: #ffffff;
+  position: sticky;
+}
+
+
+</style>
+<body onload="startTime()" style="background-color:rgb(233, 233, 207);">
+
+<div id="top-bar">
+
+    <div id="uppermenu" style="font-family: roboto-medium;">
+        <ul style="font-family: ubuntu-bold-italic;position: relative;  left: 30%;">
+          <li><a></a></li>
+          <li><div style="font-family: ubuntu-bold-italic;position: relative;  left: -300px; top: -5px;">
+            <a href="#" style="font-size: 35px;color: rgb(97, 97, 97);text-decoration: none;"><img src="img/logo.png" width="38" height="35" id="logo"> goldendoge</a>
+          </div></li>
+          <li><a>Informations</a>
+            <ul>
+              <div id=border_up class=justhover><li><a href="mining/" style="text-decoration: none;color: rgb(0, 0, 0);">Mining <i class="em em-hammer_and_pick" aria-role="presentation" aria-label=""></i></a></li></div>
+              <div id=border_side class=justhover><li><a href="https://github.com/GoldenDoge/GoldenDoge/wiki"target="_blank" style="text-decoration: none;color: rgb(0, 0, 0);">RPC API <i style="color: #F4900C;" class="fas fa-server"></i></a></li></div>
+           
+              
+            </ul>
+          </li>
+          <!--<li><a>Resources</a>
+                      </li>-->
+          <li><a onclick="move_to_why_gdoge()" style="text-decoration: none;color: rgb(0, 0, 0);" href="#why_gdoge">Why goldendoge?</a></li>
+          <li><a onclick="move_to_download()" style="text-decoration: none;color: rgb(0, 0, 0);" href="#download">Downloads</a></li>
+        </ul>
+        </div>
+
+</div>
+
+<div class="topnav">
+  <a href="#" class="active"><img style="position: relative; top: -10px;" src="img/logo.png" width="38" height="35" id="logo"><div style="font-family: ubuntu-bold-italic;position: relative; left: 50px; top:-44px; color: rgb(97, 97, 97);; font-size: 20pt;">goldendoge</div></a>
+  <div id="myLinks">
+    <div id="info_close">
+      <a style="text-decoration: none;font-size: 16pt;" onclick="open_info()" href="#">Informations <i class="fas fa-chevron-circle-down"></i></a>
+    </div>
+    <div id="info_open">
+      <a style="text-decoration: none;font-size: 16pt;" onclick="close_info()" href="#">Informations <i class="fas fa-chevron-circle-up"></i></a>
+      <a href="mining/" style="text-decoration: none;font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;Mining <i class="em em-hammer_and_pick" aria-role="presentation" aria-label=""></i></a>
+      <a href="https://github.com/GoldenDoge/GoldenDoge/wiki"target="_blank" style="text-decoration: none; font-size: 16pt;">&nbsp;&nbsp;&nbsp;&nbsp;RPC API <i style="color: #F4900C;" class="fas fa-server"></i></a>
+    </div>
+    <a onclick="move_to_why_gdoge()" style="text-decoration: none; font-size: 16pt;" href="#why_gdoge">Why goldendoge?</a>
+    <a onclick="move_to_download()" style="text-decoration: none; font-size: 16pt;" href="#download">Downloads</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="mobile_nav_bar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<p>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;</p>
+<p>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;</p>
+<p>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp; &nbsp;</p>
+
+<div>
+  <p style="text-align: center;font-family: ubuntu-regular;"><span style="font-size: 38pt;">GoldenDoge is maybe just some digital money</span></p>
+  <p style="text-align: center;font-family: ubuntu-regular;"><span style="font-size: 38pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or maybe great anonymous way to transfer<img src="img/logo.png" width="55" height="48" id="logo"> DOGEs. </span></p>
+</div>
+
+<div id="why_gdoge_id">
+
+  <div class="img-container">
+    <img src="img/doge_gdoge_table.png" height="75%" >
+  </div>
+
+  <p style="text-align: center;font-family: ubuntu-regular;position: relative; top:40px;"><span style="font-size: 30pt;">GoldenDoge is decentralized open source internet currency.</span></p>
+  <p style="text-align: center;font-family: ubuntu-regular;position: relative; top:40px;"><span style="font-size: 30pt;">And GoldenDoge is maybe fixing some dogecoin problems like no anonymity or infinite coins supply</span></p>
+
+</div>
+
+<div id="block_reward_box" class="square_reward">
+  <div class="circle_reward">
+      <p id="block_reward_txt">Block Reward</p>
+      <div id="block_reward">N/A</div>
+      <p id="GDOGE_txt">GDOGE</p>
+  </div>
+</div>
+
+<div id="hashrate_box" class="square_hashrate">
+    <div class="circle_hashrate">
+        <p id="hashrate_txt">Hashrate</p>
+        <div id="hashrate">N/A</div>
+        <p id="hash_unit_txt">H/s</p>
+    </div>
+</div>
+
+<div id="discord_box" class="square_discord">
+    <p id="Discord_txt">Discord</p>
+    <div id="discord_img"><a href="https://discord.gg/MHKHG8N" target="_blank"><img src="img/1024px-Discord-logo.png" width="158" height="158"></a></div>
+</div>
+
+<div id="telegram_box" class="square_telegram">
+  <p id="telegram_txt">Telegram</p>
+  <div id="telegram_img"><a href="https://t.me/GoldenDoge" target="_blank"><img src="img/512px-Telegram_logo.svg.png" width="130" height="130"></a></div>
+</div>
+
+
+
+<div id="downloads">
+  <p style="text-align: center;font-family: ubuntu-regular;font-weight: bold;"><span style="font-size: 40pt;">Downloads</span></p>
+  
+  <div id="download_linux_box" class="square_linux">
+    <p id="linux_txt">Linux</p>
+    <div id="linux_img"><a href="https://github.com/GoldenDoge/GoldenDoge-gui/releases/download/1.0.1/GoldenDoge-gui1.0.1.linux.zip" target="_blank"><img src="img/hi-clipart-penguin-dancing.png" width="180" height="180"></a></div>
+  </div>
+
+  <div id="download_windows_box" class="square_windows">
+    <p id="windows_txt">Windows</p>
+    <div id="windows_img"><a href="https://github.com/GoldenDoge/GoldenDoge-gui/releases/download/1.0.1/GoldenDoge-gui1.0.1.windows.zip" target="_blank"><img src="img/1024px-Windows_logo_-_2012.svg.png" width="180" height="180"></a></div>
+  </div>
+  
+</div>
+
+<a style="text-decoration: none;color: rgb(0, 0, 0);" href="https://github.com/GoldenDoge" target="_blank">
+<div id="github_box" class="square_github">
+  
+  <div id="github_img"><a href="https://github.com/GoldenDoge" target="_blank"><img src="img/GitHub-Mark-120px-plus.png" width="180" height="180"></a>
+    <p id="github_txt">Get source code</p>
+  </div>
+</div>
+</a>
+<div id="mail">
+<p style="text-align: center;font-family: ubuntu-regular;font-weight: bold;"><span style="font-size: 40pt;">email: dev@goldendoge.org</span></p>
+</div>
+
+</body>
+<script>
+
+var net_stats, where_to_move = window.location.hash.substr(1);
+
+if (location.protocol != 'https:')
+{
+ location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
+
+if(where_to_move=="why_gdoge")
+{
+  move_to_why_gdoge();
+}
+
+if(where_to_move=="download")
+{
+  move_to_download();
+}
+
+function move_to_why_gdoge()
+{
+  $(document).ready(function () {
+    target_offset = $('#why_gdoge_id').offset(),
+    target_top = target_offset.top;
+    $('html, body').animate({
+        scrollTop: target_top
+    }, 800);
+  });
+}
+
+function move_to_download()
+{
+  $(document).ready(function () {
+    target_offset = $('#downloads').offset(),
+    target_top = target_offset.top;
+    $('html, body').animate({
+        scrollTop: target_top
+    }, 1750);
+  });
+}
+
+function loadapi()
+{
+  $.getJSON("https://nbr.m2pool.eu:8149/stats", function(GDOGE_stats) {
+  net_stats = GDOGE_stats; //lastStats.lastblock.reward
+  });
+}
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  /*document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;*/
+  loadapi();
+  var t = setTimeout(startTime, 500);
+
+  document.getElementById('block_reward').innerHTML= (net_stats.lastblock.reward/10000000000000).toFixed(6);
+  if((net_stats.lastblock.difficulty/20)<1000)
+  {
+    document.getElementById('hashrate').innerHTML= (net_stats.lastblock.difficulty/20).toFixed(2);
+    document.getElementById('hash_unit_txt').innerHTML= 'H/s';
+  }
+  else
+  {
+    if((net_stats.lastblock.difficulty/20)<1000000)
+    {
+      document.getElementById('hashrate').innerHTML= (net_stats.lastblock.difficulty/20000).toFixed(2);
+      document.getElementById('hash_unit_txt').innerHTML= 'KH/s';
+    }
+    else
+    {
+      document.getElementById('hashrate').innerHTML= (net_stats.lastblock.difficulty/20000000).toFixed(2);
+      document.getElementById('hash_unit_txt').innerHTML= 'MH/s';
+    }
+  }
+  
+
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+function mobile_nav_bar() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function open_info() {
+  var info1 = document.getElementById("info_close"); info2 = document.getElementById("info_open");
+    info1.style.display = "none";
+    info2.style.display = "block";
+
+}
+
+function close_info() {
+  var info1 = document.getElementById("info_close"); info2 = document.getElementById("info_open");
+    info1.style.display = "block";
+    info2.style.display = "none";
+
+}
+
+//updateText('block_reward', getReadableCoins(net_stats.lastblock.reward));
+
+</script>
+</html>
